@@ -1,0 +1,173 @@
+ 
+ body {
+    background-image: url('file:///C:/Users/DELL/Pictures/imagenes_menu_desplegable/menu.png');
+    background-size: cover;          /* Hace que la imagen cubra toda la pantalla */
+    background-position: center top; /* Centra la imagen horizontalmente y la alinea arriba */
+    background-repeat: no-repeat;    /* Evita que la imagen se duplique */
+    background-attachment: fixed;    /* Opcional: mantiene el fondo fijo al hacer scroll */
+}
+
+
+h1 {
+            color: #51fbed; /* Blanco */
+            text-align: center;
+            margin-top: 40px;
+        }
+       
+h2{
+            color: #4feef7; /* Blanco */
+            text-align: center;
+            margin-top: 40px;
+        }
+        /* 3. Todos los párrafos p serán AMARILLOS (combina muy bien con el azul) */
+        p {
+            color: #55c1e8; /* Amarillo / Dorado */
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* 4. Clase especial por si quieres pintar una palabra o frase de otro color */
+        .texto-celeste {
+            color: #00FFFF; /* Celeste / Cyan */
+            font-weight: bold; /* Letra negrita */
+        }
+ .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: center;
+    background: #222;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.submenu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background: #333;
+    transition: 0.3s;
+}
+
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar submenús */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    min-width: 220px;
+    z-index: 1000;
+}
+
+/* Mostrar al pasar el cursor */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu a:hover {
+    background: #0066ff;
+}
+ 
+ /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo con degradado azul, blanco y gris */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #0d6efd, #ffffff, #6c757d);
+}
+
+/* Menú principal */
+.menu {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+}
+
+/* Lista principal */
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Elementos del menú */
+.menu ul li {
+    position: relative;
+}
+
+/* Links */
+.menu ul li a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Hover */
+.menu ul li a:hover {
+    background: #0d6efd;
+    border-radius: 5px;
+}
+
+/* Submenú oculto */
+.submenu {
+    display: none;
+    position: absolute;
+    background: #343a40;
+    top: 40px;
+    min-width: 180px;
+    border-radius: 5px;
+}
+
+/* Items del submenu */
+.submenu li a {
+    padding: 10px;
+}
+
+/* Mostrar submenu */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Contenido central */
+.contenido {
+    text-align: center;
+    margin-top: 100px;
+    color: #333;
+}
+
+.contenido h1 {
+    font-size: 40px;
+}
+
+.contenido p {
+    font-size: 18px;
+}
